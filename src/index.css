@@ -1,3 +1,16 @@
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
+.botao {
+    background-color: var(--primary);
+    color: white;
+}
+
 :root {
     --primary: rgb(112, 44, 144);
 }
