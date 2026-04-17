@@ -4,16 +4,23 @@ import "./HeaderPublic.css"
 
 function HeaderPublic() {
     return (
-        <header className="container-fluid p-2">
-            <div className="container-xxl ">
+        <header className="container-fluid py-2">
+            <div className="container-xxl px-3 px-md-4">
                 <div className="d-flex justify-content-between align-items-center">
-                    <div >
-                        <h1 className="header-h1"><Link to="/"><img src={logo} alt="Logo da IMA" className="" /></Link></h1>
-                    </div>
-                    <nav className="header-nav d-flex justify-content-between align-items-center">
-                        <button type="button" className="btn btn-lg botao">Cadastrar</button>
-                        <button type="button" className="btn btn-lg ms-3 botao">Login</button>
+
+                    <Link to="/">
+                        <img className="header-img" src={logo} alt="Logo da IMA" />
+                    </Link>
+
+                    <nav className="d-flex align-items-center gap-2">
+                        <Link to="/cadastro" className="btn btn-lg btn-roxo">
+                            Cadastrar
+                        </Link>
+                        <Link to="/login" className="btn btn-lg btn-roxo">
+                            Login
+                        </Link>
                     </nav>
+
                 </div>
             </div>
         </header>

@@ -1,16 +1,27 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 a {
     text-decoration: none;
 }
 
-p {
-    margin: 0;
+.btn-roxo {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    color: #fff;
+    transition: all 0.2s ease-in-out;
 }
 
-.botao {
-    background-color: var(--primary);
-    color: white;
+.btn-roxo:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    color: #fff;
+    transform: translateY(-1px);
 }
 
 :root {
     --primary: rgb(112, 44, 144);
+    --primary-dark: rgb(90, 36, 117);
 }
