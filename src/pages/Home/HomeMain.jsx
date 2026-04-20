@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 
 function HomeMain() {
     return (
+
         <main className="container-xxl px-3 px-md-4 py-5 text-center">
             <div className="col-lg-8 mx-auto">
                 <h1 className="mb-4">Sistema de Triagem Digital</h1>

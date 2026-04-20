@@ -13,7 +13,7 @@ function HeaderPublic() {
                     </Link>
 
                     <nav className="d-flex align-items-center gap-2">
-                        <Link to="/cadastro" className="btn btn-lg btn-roxo">
+                        <Link to="/CadastroMain" className="btn btn-lg btn-roxo">
                             Cadastrar
                         </Link>
                         <Link to="/login" className="btn btn-lg btn-roxo">
