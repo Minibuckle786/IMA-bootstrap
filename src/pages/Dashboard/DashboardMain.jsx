@@ -1,18 +1,24 @@
+import Categoria from "../Admin/CategoriaAdmin/Categoria"
 import "./DashboardMain.css"
 
 function DashboardMain() {
     return (
         <>
-            <div className="DashboardMain">
-                <div className="DashboardMain-Layout">
-                    <div className="DashboardMain-h1">
-                        <h1>Meu Painel</h1>
-                    </div>
+            <div className="container">
+                <div className="d-flex flex-column align-items-center text-center">
 
+
+                    <h1 className="mb-3">Meu Painel</h1>
+
+                    <hr className="w-100" />
+
+
+                    <hr />
+                    <button className="btn btn-roxo w-100 ">
+                        <span>+</span> Novo Painel</button>
                 </div>
-                <hr />
-                <button className="DashboardMain-button2"><span>+</span> Novo Painel</button>
             </div>
+            <Categoria />
         </>
     )
 }

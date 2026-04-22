@@ -1,46 +1,48 @@
-import { Routes, Route } from "react-router-dom"
+import { Routes, Route } from "react-router-dom";
 
-// Inicio Publico
+// Layouts
+import PublicLayout from "./components/Layout/PublicLayout";
+import PrivateLayout from "./components/Layout/PrivateLayout";
 
-import HeaderPublic from "./components/HeaderPublic/HeaderPublic"
-import Footer from "./components/Footer/Footer"
-import HomeMain from "./pages/Home/HomeMain"
-import CadastroMain from "./pages/Cadastro/CadastroMain"
-import Login from "./pages/Login/LoginMain"
-import "./App.css"
+// Publico
+import HomeMain from "./pages/Home/HomeMain";
+import CadastroMain from "./pages/Cadastro/CadastroMain";
+import Login from "./pages/Login/LoginMain";
 
-// Fim Publico
+// Privado 
+import Dashboard from "./pages/Dashboard/DashboardMain";
+import Categoria from "./pages/Admin/CategoriaAdmin/Categoria";
+import CategoriaDetalhes from "./pages/Admin/CategoriaDetalhe/CategoriaDetalhe";
 
-// Inicio Private
-
-import PrivateRoute from "./routes/PrivateRoute"
-import Dashboard from "./pages/Dashboard/DashboardMain"
-
-// Fim Private
+// Proteção
+import PrivateRoute from "./routes/PrivateRoute";
 
 function App() {
     return (
-        <div className="d-flex flex-column justify-content-between app">
-            <HeaderPublic />
+        <Routes>
 
-            <Routes>
+            {/* 🌐 ROTAS PÚBLICAS */}
+            <Route element={<PublicLayout />}>
                 <Route path="/" element={<HomeMain />} />
-                <Route path="/CadastroMain" element={<CadastroMain />} />
-                <Route path="/Login" element={<Login />} />
+                <Route path="/cadastro" element={<CadastroMain />} />
+                <Route path="/login" element={<Login />} />
+            </Route>
 
-                <Route
-                    path="/dashboard"
-                    element={
-                        <PrivateRoute>
-                            <Dashboard />
-                        </PrivateRoute>
-                    }
-                />
-            </Routes>
+            {/* 🔐 ROTAS PRIVADAS */}
+            <Route
+                element={
+                    <PrivateRoute>
+                        <PrivateLayout />
+                    </PrivateRoute>
+                }
+            >
+                <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="/Categoria" element={<Categoria />} />
+                <Route path="/CategoriaDetalhes" element={<CategoriaDetalhes />} />
+            </Route>
 
-            <Footer />
-        </div>
-    )
+        </Routes>
+    );
 }
 
-export default App
+export default App;

@@ -1,12 +1,6 @@
 import "./LoginMain.css"
-import { useNavigate } from "react-router-dom"
-import { Link } from "react-router-dom"
+import { useNavigate, Link } from "react-router-dom"
 import { FaEnvelope, FaLock } from "react-icons/fa"
-
-const handleLogin = () => {
-    localStorage.setItem("token", "123456")
-    window.location.href = "/#/dashboard"
-}
 
 function LoginMain() {
     const navigate = useNavigate()
@@ -14,10 +8,13 @@ function LoginMain() {
     function handleLogin(e) {
         e.preventDefault()
 
-        // salva corretamente
+        // salva token (ESSENCIAL)
+        localStorage.setItem("token", "123456")
+
+        // opcional (nome do usuário)
         localStorage.setItem("usuario", "Emerson")
 
-        // navega corretamente
+        // navegação correta (SPA)
         navigate("/dashboard")
     }
 
