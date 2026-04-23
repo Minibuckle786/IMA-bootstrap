@@ -74,9 +74,10 @@ function CategoriaDetalhes() {
 
                                 {/* BOTAO */}
                                 <div className="d-flex gap-2 mt-auto">
-                                    <Link to="/service-visualizar" className="btn btn-outline-primary btn-sm">Visualizar</Link>
-                                    <Link to="/service-editar" className="btn btn-outline-warning btn-sm">Editar</Link>
-                                    <Link to="/service-perguntas" className="btn btn-outline-secondary btn-sm">Perguntas</Link>
+                                    <Link to="/ServiceVisualizar" className="btn btn-outline-primary btn-sm">Visualizar</Link>
+                                    <Link to="/ServiceEditar" className="btn btn-outline-warning btn-sm">Editar</Link>
+                                    <Link to="/ServicePerguntas" className="btn btn-outline-secondary btn-sm">Perguntas</Link>
+                                    <Link to="/ResultadoFinal" className="btn btn-outline-secondary btn-sm">Resposta final</Link>
                                 </div>
 
                             </div>

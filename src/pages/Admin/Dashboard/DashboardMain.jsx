@@ -1,4 +1,4 @@
-import Categoria from "../Admin/CategoriaAdmin/Categoria"
+import Categoria from "../CategoriaAdmin/Categoria"
 import "./DashboardMain.css"
 
 function DashboardMain() {

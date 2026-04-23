@@ -1,0 +1,81 @@
+.ServiceEditar-layout,
+.ServiceEditar-body {
+    width: 90%;
+    margin: auto;
+    padding: 20px 0 20px 0;
+
+}
+
+.ServiceEditar-layout a {
+    font-size: 1.2rem;
+}
+
+.ServiceEditar-layout h2 {
+    margin-top: 10px;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.ServiceEditar-layout2 {
+    background-color: var(--fundo-cinza);
+
+}
+
+.ServiceEditar-body form {
+    background-color: var(--color-branco);
+
+}
+
+.ServiceEditar-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+}
+
+.ServiceEditar-nome {
+    font-size: 1.2rem;
+}
+
+.ServiceEditar-label {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.ServiceEditar-label input {
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.ServiceEditar-Radio {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.ServiceEditar-Radio label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.2rem;
+    gap: 5px;
+}
+
+.ServiceEditar-campo {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+}
+
+#descricao {
+    margin: 10px;
+    height: 150px;
+}
+
+.serviceEditarSalvar {
+    padding: 15px 0;
+    font-size: 12px;
+}

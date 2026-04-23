@@ -32,3 +32,14 @@ a {
     --primary: rgb(112, 44, 144);
     --primary-dark: rgb(90, 36, 117);
 }
+
+h1,
+h2 {
+    margin: 0;
+}
+
+@media print {
+    button {
+        display: none;
+    }
+}

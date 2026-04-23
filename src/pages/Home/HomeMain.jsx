@@ -13,7 +13,10 @@ function HomeMain() {
                     <p className="mb-3">O sistema organiza as informações de forma estruturada e objetiva, garantindo maior precisão na recomendação final.</p>
                 </div>
                 <div className=" mt-4">
-                    <button className="btn btn-lg btn-roxo">Iniciar Triagem</button>
+                    <Link to="/Triagem" className="btn btn-lg btn-roxo">
+                        Iniciar Triagem
+                    </Link>
+
                 </div>
             </div>
         </main>

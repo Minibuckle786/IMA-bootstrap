@@ -1,0 +1,47 @@
+ .body-fundo-branco {
+     background-color: var(--color-branco);
+     padding: 10px;
+ }
+
+ .EditarPerguntas-text p {
+     font-size: 1.4rem;
+ }
+
+ .EditarPerguntas-1P {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .EditarPerguntas-1P input {
+     padding: 8px;
+     font-size: 1.2rem;
+     margin: 10px 0;
+ }
+
+ .EditarPerguntas-2P {
+     display: flex;
+     align-items: center;
+     margin: 10px 0;
+ }
+
+ .EditarPerguntas-2P label {
+     font-size: 1rem;
+     margin: 0px 5px;
+ }
+
+ .EditarPerguntas-3P {
+     border: 1px solid red;
+     padding: 10px;
+     margin-top: 8px;
+ }
+
+ .EditarPerguntas-1R select {
+     padding: 10px;
+     margin: 10px 0;
+     font-size: 1rem;
+ }
+
+ .EditarPerguntas-1R {
+     display: flex;
+     flex-direction: column;
+ }
